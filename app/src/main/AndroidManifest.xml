@@ -58,6 +58,8 @@
         <activity android:name=".CircleDetailActivity"></activity>
         <activity android:name=".CircleSearchActivity"></activity>
         <activity android:name=".UserListActivity"></activity>
+        <activity android:name=".UserDetailActivity"></activity>
+        <activity android:name=".UserSearchActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data

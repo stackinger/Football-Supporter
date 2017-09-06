@@ -21,168 +21,66 @@ public class UserListActivity extends BaseSearchActivity {
         setTitle("用户列表");
         setBackBtn();
 
+        viewEvent();
+        ToUserSearch();
     }
 
-    /*cardview添加长按事件*/
-    protected void longClick(){
-        CardView card1 = (CardView) findViewById(R.id.cl_card1);
-        CardView card2 = (CardView) findViewById(R.id.cl_card2);
-        CardView card3 = (CardView) findViewById(R.id.cl_card3);
-        CardView card4 = (CardView) findViewById(R.id.cl_card4);
-        CardView card5 = (CardView) findViewById(R.id.cl_card5);
-        card1.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                new AlertDialog.Builder(UserListActivity.this).setTitle("系统提示")//设置对话框标题
-                        .setMessage("是否确认删除该条圈子？")//设置显示的内容
-                        .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
-                                // TODO Auto-generated method stub
-                               /* finish();*/
-                            }
-                        }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {//响应事件
-                        // TODO Auto-generated method stub
-                        /*Log.i("alertdialog"," 请保存数据！");*/
-                    }
-                }).show();//在按键响应事件中显示此对话框
-                return false;
-            }
-        });
-        card2.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                new AlertDialog.Builder(UserListActivity.this).setTitle("系统提示")//设置对话框标题
-                        .setMessage("是否确认删除该条圈子？")//设置显示的内容
-                        .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
-                                // TODO Auto-generated method stub
-                               /* finish();*/
-                            }
-                        }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {//响应事件
-                        // TODO Auto-generated method stub
-                        /*Log.i("alertdialog"," 请保存数据！");*/
-                    }
-                }).show();//在按键响应事件中显示此对话框
-                return false;
-            }
-        });
-        card3.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                new AlertDialog.Builder(UserListActivity.this).setTitle("系统提示")//设置对话框标题
-                        .setMessage("是否确认删除该条圈子？")//设置显示的内容
-                        .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
-                                // TODO Auto-generated method stub
-                               /* finish();*/
-                            }
-                        }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {//响应事件
-                        // TODO Auto-generated method stub
-                        /*Log.i("alertdialog"," 请保存数据！");*/
-                    }
-                }).show();//在按键响应事件中显示此对话框
-                return false;
-            }
-        });
-        card4.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                new AlertDialog.Builder(UserListActivity.this).setTitle("系统提示")//设置对话框标题
-                        .setMessage("是否确认删除该条圈子？")//设置显示的内容
-                        .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
-                                // TODO Auto-generated method stub
-                               /* finish();*/
-                            }
-                        }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {//响应事件
-                        // TODO Auto-generated method stub
-                        /*Log.i("alertdialog"," 请保存数据！");*/
-                    }
-                }).show();//在按键响应事件中显示此对话框
-                return false;
-            }
-        });
-        card5.setOnLongClickListener(new View.OnLongClickListener() {
-            @Override
-            public boolean onLongClick(View view) {
-                new AlertDialog.Builder(UserListActivity.this).setTitle("系统提示")//设置对话框标题
-                        .setMessage("是否确认删除该条圈子？")//设置显示的内容
-                        .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
-                                // TODO Auto-generated method stub
-                               /* finish();*/
-                            }
-                        }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {//响应事件
-                        // TODO Auto-generated method stub
-                        /*Log.i("alertdialog"," 请保存数据！");*/
-                    }
-                }).show();//在按键响应事件中显示此对话框
-                return false;
-            }
-        });
+    /*LinearLayout添加长按事件*/
+    protected void viewEvent(){
+        View view1 = findViewById(R.id.ul_view1);
+        View view2 = findViewById(R.id.ul_view2);
+        View view3 = findViewById(R.id.ul_view3);
+        View view4 = findViewById(R.id.ul_view4);
+        View view5 = findViewById(R.id.ul_view5);
+
 
         //点击事件
-        card1.setOnClickListener(new View.OnClickListener() {
+        view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this,CircleDetailActivity.class);
+                Intent intent = new Intent(UserListActivity.this,UserDetailActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
         });
-        card2.setOnClickListener(new View.OnClickListener() {
+        view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this,CircleDetailActivity.class);
+                Intent intent = new Intent(UserListActivity.this,UserDetailActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
         });
-        card3.setOnClickListener(new View.OnClickListener() {
+        view3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this,CircleDetailActivity.class);
+                Intent intent = new Intent(UserListActivity.this,UserDetailActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
         });
-        card4.setOnClickListener(new View.OnClickListener() {
+        view4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this,CircleDetailActivity.class);
+                Intent intent = new Intent(UserListActivity.this,UserDetailActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
         });
-        card5.setOnClickListener(new View.OnClickListener() {
+        view5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this,CircleDetailActivity.class);
+                Intent intent = new Intent(UserListActivity.this,UserDetailActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
@@ -190,14 +88,14 @@ public class UserListActivity extends BaseSearchActivity {
     }
 
     /*搜索按钮添加事件*/
-    protected void ToCircleSearch() {
+    protected void ToUserSearch() {
         ImageView imgView = (ImageView) findViewById(R.id.img_search);
         imgView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(UserListActivity.this, CircleSearchActivity.class);
+                Intent intent = new Intent(UserListActivity.this, UserSearchActivity.class);
                 //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是CircleListActivity传过来的值！");
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
