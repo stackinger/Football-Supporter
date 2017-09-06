@@ -1,5 +1,6 @@
 package com.example.zhouk.footballsupporter;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.SearchView;
@@ -33,6 +34,23 @@ public class NewsSearchActivity extends BaseActivity {
             public boolean onQueryTextChange(String newText) {
                 card.setVisibility(View.INVISIBLE);
                 return false;
+            }
+        });
+
+        viewEvent();
+    }
+
+    /*查询结果添加事件*/
+    protected void viewEvent(){
+        CardView card = (CardView) findViewById(R.id.ns_card);
+        card.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NewsSearchActivity.this, NewsEditDetailActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是NewsSearchActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
             }
         });
     }
