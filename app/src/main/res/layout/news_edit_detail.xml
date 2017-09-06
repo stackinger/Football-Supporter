@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="标题： "
+                android:textColor="#000"
+                android:textSize="19sp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="名宿：曼联与皇马的差距还很大"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分类： "
+                android:textColor="#000"
+                android:textSize="19sp"/>
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:entries="@array/news"></Spinner>
+        </LinearLayout>
+        <android.support.v7.widget.CardView
+            android:id="@+id/ne_card1"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/ne_iv01"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/news_ms"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="图片描述"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:layout_gravity="bottom"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    曼联名宿安迪-科尔在近日接受采访时表示，曼联不能因为目前的不错开局而得意忘形，同时他也认为曼联与皇马还有很大的差距。
+       安迪-科尔说：“重回欧冠对于曼联来说非常重要，因为这会给俱乐部提供另一个引援的平台，这是球迷们想要看到的东西，也是他们对于像曼联这样一家俱乐部所希望看到的东西，所以这很重要。”
+“现在想要赢得欧冠已经变得越来越困难了，如果你们看看皇马，我们在欧洲超级杯里与皇马踢过比赛，我认为你们可以看到差距。”
+“曼联和皇马之间有很大的差距，在那场欧洲超级杯里，皇马阵中一些更出色的球员还坐在替补席上。所以，想要赢得欧冠你就必须拥有极佳的比赛状态。”
+在谈到联赛争冠时，安迪-科尔表示：“曼联还有很长的路要走，这是一场马拉松，而不是短跑。你们不能因为曼联签下了一些优秀的球员就说他们是夺冠热门了。”
+“上赛季曼联最终排名联赛第六，是的，球队在今夏引进了一些不错的球员，但是本赛季的英超有六支球队可以赢得冠军。曼联会是其中之一，但我不认为目前任何人可以得出最终的结论，因为这是一个跌宕起伏的联赛。”
+“10个进球，没有丢球，创造了很多机会并且也进了球，这样的回归方式对于曼联来说很不错，看起来我们踢得很得体，所以我很高兴。”
+“曼城是作为夺冠热门开启联赛的，我不认为那时人们在谈论曼联，但随后人们或许在谈论曼联了，但这是一段漫长的路程。”"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <Button
+                        android:id="@+id/ne_delBtn01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:text="删除段落"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/ne_card2"
+            android:layout_width="match_parent"
+            android:layout_height="288dp"
+            android:layout_marginTop="5dp"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@drawable/border">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/ne_iv02"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        />
+
+                    <Button
+                        android:id="@+id/ne_b02"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/ic_border_inner_black_24dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="8dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="图片描述"/>
+                        <EditText
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:maxLines="1"
+                            android:maxLength="20"
+                            android:layout_gravity="bottom"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:background="@drawable/border"
+                    android:layout_margin="5dp">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right">
+                    <Button
+                        android:id="@+id/ne_delBtn02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorPrimary"
+                        android:textColor="#fff"
+                        android:text="删除段落"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/ne_addBtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary"
+            android:text="添加段落"
+            android:textColor="#fff"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/ne_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="10dp"
+                android:text="确定"
+                android:textColor="#fff"
+                android:background="@color/colorPrimary"/>
+
+            <Button
+                android:id="@+id/ne_pingjia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:text="查看评价"
+                android:textColor="#fff"
+                android:background="#FFB90F"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

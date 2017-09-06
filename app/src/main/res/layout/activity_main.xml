@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.zhouk.footballsupporter.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!" />
+</RelativeLayout>-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#ffffff"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:orientation="vertical">
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="180dp"-->
+            <!--android:background="@drawable/mainheader"-->
+            <!--&gt;-->
+        <!--</LinearLayout>-->
+        <com.jude.rollviewpager.RollPagerView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:id="@+id/roll_view_pager"
+            app:rollviewpager_play_delay="3000">
+
+        </com.jude.rollviewpager.RollPagerView>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:id="@+id/field"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                >
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_border_vertical_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="球场管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:id="@+id/order"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_assignment_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="订单管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:background="#f2f2f2"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/news"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_art_track_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="新闻"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+            </LinearLayout>
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 第二行菜单    用margin来调整间隔还是不科学 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:gravity="center_horizontal"
+                android:id="@+id/circle"
+                android:tag="testtag"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_group_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="圈子管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:id="@+id/user"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_assignment_ind_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="用户管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:background="#f2f2f2"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/shop"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_shopping_cart_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="商城管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+            </LinearLayout>
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 第二行菜单    用margin来调整间隔还是不科学 -->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:gravity="center_horizontal"
+                android:id="@+id/manager"
+                android:tag="testtag"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_portrait_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="管理员管理"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:background="#f2f2f2"
+                android:id="@+id/notify"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_notifications_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统通知"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+
+            </LinearLayout>
+
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:background="#f2f2f2"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/myinfo"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/ic_face_black_24dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的信息"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginBottom="3dp"
+                    />
+            </LinearLayout>
+
+            <!-- 权重布局   充当间隔  自适应所有屏幕 -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="60dp"
+                >
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="10dp"
+            android:text="西南交通大学体育部" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="028-88236840"/>
+    </LinearLayout>
+
+</ScrollView>
+
