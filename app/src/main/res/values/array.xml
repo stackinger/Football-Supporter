@@ -31,4 +31,25 @@
         <item>新闻</item>
         <item>文章</item>
     </string-array>
+
+    <string-array name="goods_fenlei">
+        <item>全部</item>
+        <item>足球</item>
+        <item>背包</item>
+        <item>球鞋</item>
+        <item>手套</item>
+        <item>上衣</item>
+        <item>裤子</item>
+        <item>袜子</item>
+    </string-array>
+
+    <string-array name="goods_xiaoliang">
+        <item>销量↑</item>
+        <item>销量↓</item>
+    </string-array>
+
+    <string-array name="goods_jiage">
+        <item>价格↑</item>
+        <item>价格↓</item>
+    </string-array>
 </resources>

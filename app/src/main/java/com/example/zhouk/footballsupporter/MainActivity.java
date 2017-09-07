@@ -49,6 +49,7 @@ public class MainActivity extends BaseNoBackActivity {
         NewsManagement();
         CircleMagement();
         UserMagement();
+        ShopMagement();
     }
 
     /*球场管理点击事件*/
@@ -112,6 +113,7 @@ public class MainActivity extends BaseNoBackActivity {
             }
         });
     }
+
     /*圈子管理点击事件*/
     protected void UserMagement(){
         View newsField = (View)findViewById(R.id.user);
@@ -119,6 +121,21 @@ public class MainActivity extends BaseNoBackActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,UserListActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*商城管理点击事件*/
+    protected void ShopMagement(){
+        View shopField = (View)findViewById(R.id.shop);
+        shopField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,ShopMenuActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
