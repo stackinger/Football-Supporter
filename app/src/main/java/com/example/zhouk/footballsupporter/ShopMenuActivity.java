@@ -25,6 +25,7 @@ public class ShopMenuActivity extends BaseActivity {
         setTitle("商城管理");
 
         goodsList();
+        orderList();
     }
 
     /*商品管理跳转*/
@@ -36,6 +37,23 @@ public class ShopMenuActivity extends BaseActivity {
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
                 Intent intent = new Intent(ShopMenuActivity.this,ShopGoodsListActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*商品管理跳转*/
+    protected void orderList(){
+        //添加点击事件
+        View field = (View)findViewById(R.id.sm_order);
+        field.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
+                Intent intent = new Intent(ShopMenuActivity.this,ShopOrderListActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
