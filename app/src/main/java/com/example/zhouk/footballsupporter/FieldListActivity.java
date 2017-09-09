@@ -60,6 +60,7 @@ public class FieldListActivity extends BaseActivity{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
+                                Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -83,6 +84,7 @@ public class FieldListActivity extends BaseActivity{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
+                                Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -106,6 +108,7 @@ public class FieldListActivity extends BaseActivity{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
+                                Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -129,6 +132,7 @@ public class FieldListActivity extends BaseActivity{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
+                                Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -152,6 +156,7 @@ public class FieldListActivity extends BaseActivity{
                             @Override
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
+                                Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
