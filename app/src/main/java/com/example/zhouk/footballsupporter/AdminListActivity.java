@@ -9,7 +9,7 @@ import android.widget.ImageView;
 
 import com.example.zhouk.footballsupporter.base.BaseSearchActivity;
 
-public class ShopOrderListActivity extends BaseSearchActivity {
+public class AdminListActivity extends BaseSearchActivity {
     private final int requestCode = 1500;
 
     @Override
@@ -17,36 +17,24 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.shop_order_list);
 
-        setTitle("商品订单列表");
+        setTitle("管理员列表");
         setBackBtn();
 
-        addTabTitle();
     }
 
     /*搜索按钮添加事件*/
-    protected void ToOrderSearch() {
+    protected void ToAdminSearch() {
         ImageView imgView = (ImageView) findViewById(R.id.img_search);
         imgView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderSearchActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderSearchActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderListActivity传过来的值！");
                 //跳转Activity
                 startActivityForResult(intent, requestCode);
             }
         });
-    }
-
-    /*Tablayout添加标题*/
-    protected void addTabTitle() {
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.sol_tab);
-        tabLayout.addTab(tabLayout.newTab().setText("全部"));
-        tabLayout.addTab(tabLayout.newTab().setText("待付款"));
-        tabLayout.addTab(tabLayout.newTab().setText("待发货"));
-        tabLayout.addTab(tabLayout.newTab().setText("待收货"));
-        tabLayout.addTab(tabLayout.newTab().setText("待评价"));
-        tabLayout.addTab(tabLayout.newTab().setText("退款/售后"));
     }
 
     /*添加按钮事件*/
@@ -58,7 +46,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         pingJiaBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderPingJiaActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderPingJiaActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderListActivity传过来的值！");
                 //跳转Activity
@@ -68,7 +56,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         quxiao1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderQuXiaoActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderQuXiaoActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderListActivity传过来的值！");
                 //跳转Activity
@@ -78,7 +66,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         quxiao2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderTuiKuanQuXiaoActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderTuiKuanQuXiaoActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderListActivity传过来的值！");
                 //跳转Activity
@@ -88,7 +76,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         tuikuan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderTuiKuanActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderTuiKuanActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderListActivity传过来的值！");
                 //跳转Activity
@@ -106,7 +94,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         liner1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderDetailActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderDetailActivity传过来的值！");
                 //跳转Activity
@@ -116,7 +104,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         liner2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderDetailActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderDetailActivity传过来的值！");
                 //跳转Activity
@@ -126,7 +114,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         liner3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderDetailActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderDetailActivity传过来的值！");
                 //跳转Activity
@@ -136,7 +124,7 @@ public class ShopOrderListActivity extends BaseSearchActivity {
         liner4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ShopOrderListActivity.this, OrderDetailActivity.class);
+                Intent intent = new Intent(AdminListActivity.this, OrderDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是OrderDetailActivity传过来的值！");
                 //跳转Activity

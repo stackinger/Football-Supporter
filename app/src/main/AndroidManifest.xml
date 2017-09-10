@@ -66,6 +66,9 @@
         <activity android:name=".ShopGoodsAddActivity"></activity>
         <activity android:name=".ShopGoodsDetailActivity"></activity>
         <activity android:name=".ShopOrderListActivity"></activity>
+        <activity android:name=".AdminListActivity"></activity>
+        <activity android:name=".NoticeMenuActivity"></activity>
+        <activity android:name=".MyInfoActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data

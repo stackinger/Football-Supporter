@@ -56,7 +56,7 @@ public class OrderListActivity extends BaseSearchActivity {
         tabLayout.addTab(tabLayout.newTab().setText("待付款"));
         tabLayout.addTab(tabLayout.newTab().setText("待消费"));
         tabLayout.addTab(tabLayout.newTab().setText("已完成"));
-        tabLayout.addTab(tabLayout.newTab().setText("待退款"));
+        tabLayout.addTab(tabLayout.newTab().setText("退款/售后"));
     }
 
     /*添加按钮事件*/

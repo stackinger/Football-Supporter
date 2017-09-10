@@ -14,6 +14,7 @@ import com.example.zhouk.footballsupporter.base.BaseNoBackActivity;
 import com.jude.rollviewpager.RollPagerView;
 import com.jude.rollviewpager.adapter.StaticPagerAdapter;
 import com.jude.rollviewpager.hintview.ColorPointHintView;
+import com.readystatesoftware.viewbadger.BadgeView;
 
 public class MainActivity extends BaseNoBackActivity {
     private RollPagerView mRollViewPager;
@@ -50,6 +51,11 @@ public class MainActivity extends BaseNoBackActivity {
         CircleMagement();
         UserMagement();
         ShopMagement();
+        AdminMagement();
+        NoticeMagement();
+        MyInfoManagement();
+        jiaobiao();
+
     }
 
     /*球场管理点击事件*/
@@ -142,6 +148,64 @@ public class MainActivity extends BaseNoBackActivity {
                 startActivityForResult(intent, requestCode);
             }
         });
+    }
+
+    /*管理员管理点击事件*/
+    protected void AdminMagement(){
+        View shopField = (View)findViewById(R.id.admin);
+        shopField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,AdminListActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*系统通知点击事件*/
+    protected void NoticeMagement(){
+        View shopField = (View)findViewById(R.id.notice);
+        shopField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,NoticeMenuActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*我的信息点击事件*/
+    protected void MyInfoManagement(){
+        View shopField = (View)findViewById(R.id.myinfo);
+        shopField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,MyInfoActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*为通知图标添加角标*/
+    protected void jiaobiao(){
+        ImageView img = (ImageView) findViewById(R.id.img_back_no);
+        BadgeView badgeView=new BadgeView(this, img);
+        badgeView.setText("1");
+        badgeView.setTextColor(Color.WHITE);
+        badgeView.setBadgePosition(BadgeView.POSITION_TOP_RIGHT);
+        badgeView.setAlpha(1f);
+        badgeView.setBadgeMargin(0,0);
+        //badgeView.setAnimation(alphaAnimation);
+        badgeView.show();
     }
 
 
