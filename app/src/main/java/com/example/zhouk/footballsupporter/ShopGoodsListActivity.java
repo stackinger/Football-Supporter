@@ -71,8 +71,8 @@ public class ShopGoodsListActivity extends BaseSearchActivity {
         CardView card3 = (CardView) findViewById(R.id.shl_card3);
         CardView card4 = (CardView) findViewById(R.id.shl_card4);
         CardView card5 = (CardView) findViewById(R.id.shl_card5);
-        CardView card6 = (CardView) findViewById(R.id.shl_card6);
-        CardView card7 = (CardView) findViewById(R.id.shl_card7);
+        CardView card6 = (CardView) findViewById(R.id.shl_card4);
+        CardView card7 = (CardView) findViewById(R.id.shl_card5);
 
         card1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override

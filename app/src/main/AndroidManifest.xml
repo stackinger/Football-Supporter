@@ -66,6 +66,12 @@
         <activity android:name=".ShopGoodsAddActivity"></activity>
         <activity android:name=".ShopGoodsDetailActivity"></activity>
         <activity android:name=".ShopOrderListActivity"></activity>
+        <activity android:name=".ShopOrderDetailActivity"></activity>
+        <activity android:name=".ShopOrderSearchActivity"></activity>
+        <activity android:name=".ShopOrderQuXiaoActivity"></activity>
+        <activity android:name=".ShopOrderTuiKuanQuXiaoActivity"></activity>
+        <activity android:name=".ShopOrderFaHuoActivity"></activity>
+        <activity android:name=".ShopOrderTuiKuanActivity"></activity>
         <activity android:name=".AdminListActivity"></activity>
         <activity android:name=".NoticeMenuActivity"></activity>
         <activity android:name=".MyInfoActivity"></activity>

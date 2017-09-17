@@ -59,7 +59,7 @@
             android:layout_height="wrap_content" />
     </LinearLayout>
     <Button
-        android:id="@+id/ot_confirm"
+        android:id="@+id/sot_confirm"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="15dp"

@@ -52,4 +52,15 @@
         <item>价格↑</item>
         <item>价格↓</item>
     </string-array>
+
+    <string-array name="kuaidi">
+        <item>顺丰速递SF</item>
+        <item>中国邮政EMS</item>
+        <item>圆通速递YTO</item>
+        <item>中通快递ZTO</item>
+        <item>申通快递STO</item>
+        <item>韵达快递YUNDA</item>
+        <item>百世快递BestExpress</item>
+        <item>其他</item>
+    </string-array>
 </resources>
