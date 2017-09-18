@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_margin="12dp">
         <LinearLayout
-            android:id="@+id/ul_view1"
+            android:id="@+id/al_view1"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="用户180********"
+                android:text="管理员赵老师"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -35,7 +35,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
-            android:id="@+id/ul_view2"
+            android:id="@+id/al_view2"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -51,7 +51,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="大橙子"
+                android:text="管理员孙老师"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -61,7 +61,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
-            android:id="@+id/ul_view3"
+            android:id="@+id/al_view3"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -77,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="用户153********"
+                android:text="管理员李老师"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -87,7 +87,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
-            android:id="@+id/ul_view4"
+            android:id="@+id/al_view4"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -103,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="lorrye迁"
+                android:text="球场管理员1"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -113,7 +113,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
-            android:id="@+id/ul_view5"
+            android:id="@+id/al_view5"
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -129,7 +129,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="wangyuses"
+                android:text="球场管理员2"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -154,7 +154,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="一直在路上"
+                android:text="球场管理员3"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -181,7 +181,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="最爱doublenew"
+                android:text="商品管理员1"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -206,7 +206,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="残月云飞"
+                android:text="商品管理员2"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -233,7 +233,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="LilitH_SEELE"
+                android:text="商品管理员3"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -254,13 +254,15 @@
                 android:src="@drawable/touxiang3"
                 app:citv_border_width="2dp"
                 app:citv_border_color="#FF000000"/>
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="不死鸟丶kry"
+                android:text="新闻文章管理员1"
                 android:textColor="#000"
-                android:textSize="20sp"/>
+                android:textSize="20sp"
+                android:id="@+id/textView8" />
         </LinearLayout>
         <View
             android:layout_width="fill_parent"
@@ -283,7 +285,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="不自见故明"
+                android:text="新闻文章管理员2"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>
@@ -308,7 +310,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:text="方圣祺"
+                android:text="新闻文章管理员3"
                 android:textColor="#000"
                 android:textSize="20sp"/>
         </LinearLayout>

@@ -17,17 +17,18 @@ public class NoticeMenuActivity extends BaseActivity {
         setBackBtn();
         setTitle("通知管理");
 
+        userNoticeList();
     }
 
-    /*商品管理跳转*/
-    protected void goodsList(){
+    /*用户通知跳转*/
+    protected void userNoticeList(){
         //添加点击事件
-        View field = (View)findViewById(R.id.sm_goods);
+        View field = (View)findViewById(R.id.nm_user);
         field.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
-                Intent intent = new Intent(NoticeMenuActivity.this,ShopGoodsListActivity.class);
+                Intent intent = new Intent(NoticeMenuActivity.this,NoticeUserListActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
@@ -36,10 +37,10 @@ public class NoticeMenuActivity extends BaseActivity {
         });
     }
 
-    /*商品管理跳转*/
-    protected void orderList(){
+    /*管理员通知跳转*/
+    protected void adminNoticeList(){
         //添加点击事件
-        View field = (View)findViewById(R.id.sm_order);
+        View field = (View)findViewById(R.id.nm_admin);
         field.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {

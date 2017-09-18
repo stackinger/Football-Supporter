@@ -24,7 +24,7 @@
             android:layout_weight="10"
             android:layout_height="wrap_content"
             android:background="#f2f2f2"
-            android:id="@+id/sm_goods"
+            android:id="@+id/nm_user"
             android:gravity="center_horizontal"
             android:orientation="vertical"
             >
@@ -33,12 +33,12 @@
                 android:layout_width="60dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="6dp"
-                android:src="@drawable/ic_view_module_black_24dp"
+                android:src="@drawable/ic_assignment_ind_black_24dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商品管理"
+                android:text="推送用户通知"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="3dp"
                 />
@@ -58,7 +58,7 @@
             android:layout_weight="10"
             android:layout_height="wrap_content"
             android:background="#f2f2f2"
-            android:id="@+id/sm_order"
+            android:id="@+id/nm_admin"
             android:gravity="center_horizontal"
             android:orientation="vertical">
 
@@ -66,12 +66,12 @@
                 android:layout_width="60dp"
                 android:layout_height="70dp"
                 android:layout_marginTop="6dp"
-                android:src="@drawable/ic_assignment_black_24dp"
+                android:src="@drawable/ic_portrait_black_24dp"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="商品订单"
+                android:text="推送管理员通知"
                 android:layout_marginTop="2dp"
                 android:layout_marginBottom="3dp"
                 />

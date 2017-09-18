@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2017年9月18日"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:maxLines="2"
+                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:textSize="18sp"
+                android:textColor="#000"/>
+        </LinearLayout>
+        <View
+            android:layout_width="fill_parent"
+            android:layout_marginTop="5dp"
+            android:layout_height="1dp"
+            android:background="#40000000" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:layout_margin="8dp"
+            android:text="加载更多..."/>
+    </LinearLayout>
+</ScrollView>

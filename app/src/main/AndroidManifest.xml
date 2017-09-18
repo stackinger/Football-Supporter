@@ -73,7 +73,10 @@
         <activity android:name=".ShopOrderFaHuoActivity"></activity>
         <activity android:name=".ShopOrderTuiKuanActivity"></activity>
         <activity android:name=".AdminListActivity"></activity>
+        <activity android:name=".AdminDetailActivity"></activity>
+        <activity android:name=".AdminSearchActivity"></activity>
         <activity android:name=".NoticeMenuActivity"></activity>
+        <activity android:name=".NoticeUserListActivity"></activity>
         <activity android:name=".MyInfoActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
