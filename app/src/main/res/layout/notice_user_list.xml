@@ -15,13 +15,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年9月15日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    关于9月16日至9月18日，西南交大主体育场11人球场草坪维护通知。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -38,13 +38,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年9月12日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    关于9月13日至9月15日，西南交大主体育场5人球场1号、3号草坪维护通知。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -61,13 +61,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年9月9日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    关于9月11日教师节放假，球场场馆关闭通知。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -84,13 +84,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年9月1日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    新学期刚刚开始，请各位管理员注意球场人数变化，控制球场人数。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -107,13 +107,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年7月1日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    暑假期间，暂定开放西南交大主体育场11人场，主体育场5人场6号。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -130,13 +130,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年6月1日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    近期天气炎热，请各位管理员注意球场状况，防止人员中暑。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -153,13 +153,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年5月1日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    关于5月1日劳动节放假通知。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>
@@ -176,13 +176,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="2017年9月18日"/>
+                android:text="2017年4月1日"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:maxLines="2"
-                android:text="    关于9月16日至9月18日，西南交大主体育场草坪维护通知。"
+                android:text="    天气逐渐转暖，最近球场拉伤人员较多，请管理员多多注意。"
                 android:textSize="18sp"
                 android:textColor="#000"/>
         </LinearLayout>

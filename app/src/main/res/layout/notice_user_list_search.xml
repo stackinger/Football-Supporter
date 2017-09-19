@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <android.support.v7.widget.SearchView
+        android:id="@+id/nuls_searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.SearchView>
+
+    <LinearLayout
+        android:id="@+id/nusl_card"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:visibility="invisible">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017年9月15日"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:maxLines="2"
+            android:text="    关于9月16日至9月18日，西南交大主体育场11人球场草坪维护通知。"
+            android:textSize="18sp"
+            android:textColor="#000"/>
+    </LinearLayout>
+
+</LinearLayout>
