@@ -14,13 +14,13 @@ public class NoticeUserListSearchActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notice_user_list);
-        final View card =  findViewById(R.id.nusl_card);
+        setContentView(R.layout.notice_user_list_search);
+        final View card =  findViewById(R.id.nuls_card);
 
         setTitle("搜索");
         setBackBtn();
 
-        SearchView searchView = (SearchView) findViewById(R.id.ns_searchview);
+        SearchView searchView = (SearchView) findViewById(R.id.nuls_searchview);
         //设置搜索框直接展开显示。左侧有放大镜(在搜索框中) 右侧有叉叉 可以关闭搜索框
         searchView.setIconified(false);
         searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
@@ -42,11 +42,11 @@ public class NoticeUserListSearchActivity extends BaseActivity {
 
     /*查询结果添加事件*/
     protected void viewEvent(){
-        View card = findViewById(R.id.nusl_card);
+        View card = findViewById(R.id.nuls_card);
         card.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListSearchActivity.this, NewsEditDetailActivity.class);
+                Intent intent = new Intent(NoticeUserListSearchActivity.this, NoticeUserDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NewsSearchActivity传过来的值！");
                 //跳转Activity

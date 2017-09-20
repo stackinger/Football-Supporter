@@ -2,6 +2,7 @@ package com.example.zhouk.footballsupporter;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -18,6 +19,8 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         setTitle("用户通知列表");
         setBackBtn();
 
+        ToNoticeUserSearch();
+        add();
     }
 
     /*LinearLayout添加长按事件*/
@@ -83,12 +86,27 @@ public class NoticeUserListActivity extends BaseSearchActivity {
     }
 
     /*搜索按钮添加事件*/
-    protected void ToUserSearch() {
+    protected void ToNoticeUserSearch() {
         ImageView imgView = (ImageView) findViewById(R.id.img_search);
         imgView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this, UserSearchActivity.class);
+                Intent intent = new Intent(NoticeUserListActivity.this, NoticeUserListSearchActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是UserListActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*添加按钮跳转*/
+    protected void add(){
+        FloatingActionButton fBtn = (FloatingActionButton) findViewById(R.id.nul_fBtn);
+        fBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(NoticeUserListActivity.this, NoticeUserDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity

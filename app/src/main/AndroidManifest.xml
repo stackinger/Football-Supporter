@@ -77,6 +77,8 @@
         <activity android:name=".AdminSearchActivity"></activity>
         <activity android:name=".NoticeMenuActivity"></activity>
         <activity android:name=".NoticeUserListActivity"></activity>
+        <activity android:name=".NoticeUserListSearchActivity"></activity>
+        <activity android:name=".NoticeUserDetailActivity"></activity>
         <activity android:name=".MyInfoActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>

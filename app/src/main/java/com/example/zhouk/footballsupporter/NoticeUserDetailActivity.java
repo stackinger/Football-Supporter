@@ -30,7 +30,7 @@ public class NoticeUserDetailActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.notice_user_detail);
 
-        setTitle("新闻详细");
+        setTitle("通知详细");
         setBackBtn();
 
     }
