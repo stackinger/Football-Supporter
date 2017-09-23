@@ -18,6 +18,7 @@ public class NoticeMenuActivity extends BaseActivity {
         setTitle("通知管理");
 
         userNoticeList();
+        adminNoticeList();
     }
 
     /*用户通知跳转*/
@@ -45,7 +46,7 @@ public class NoticeMenuActivity extends BaseActivity {
             @Override
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
-                Intent intent = new Intent(NoticeMenuActivity.this,ShopOrderListActivity.class);
+                Intent intent = new Intent(NoticeMenuActivity.this,NoticeAdminListActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
