@@ -17,12 +17,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="标题："
-                android:textSize="18sp"/>
+                android:textSize="18sp"
+                android:maxLines="1"/>
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="关于9月16日至9月18日，西南交大主体育场11人球场草坪维护通知。"
                 android:maxLines="1"
-                android:maxLength="30"/>
+                android:maxLength="100"/>
         </LinearLayout>
         <TextView
             android:layout_width="wrap_content"
@@ -36,11 +38,12 @@
             android:layout_margin="5dp">
             <EditText
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="    通知：9月16日至9月18日，因为西南交大主体育场11人球场场草坪维护，期间球场不对外开放，请各位管理员注意期间的人员流通，修改相应的球场开放时间。"/>
         </LinearLayout>
 
         <Button
-            android:id="@+id/nud_confirm"
+            android:id="@+id/nudnn_confirm"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

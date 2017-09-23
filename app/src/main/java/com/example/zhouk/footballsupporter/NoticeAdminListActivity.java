@@ -11,15 +11,15 @@ import android.widget.Toast;
 
 import com.example.zhouk.footballsupporter.base.BaseSearchActivity;
 
-public class NoticeUserListActivity extends BaseSearchActivity {
+public class NoticeAdminListActivity extends BaseSearchActivity {
     private final int requestCode = 1500;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.notice_user_list);
+        setContentView(R.layout.notice_admin_list);
 
-        setTitle("用户通知列表");
+        setTitle("管理员通知列表");
         setBackBtn();
 
         ToNoticeUserSearch();
@@ -29,20 +29,20 @@ public class NoticeUserListActivity extends BaseSearchActivity {
 
     /*LinearLayout添加事件*/
     protected void viewEvent(){
-        final View view1 = findViewById(R.id.nul_linear1);
-        final View view2 = findViewById(R.id.nul_linear2);
-        final  View view3 = findViewById(R.id.nul_linear3);
-        final View view4 = findViewById(R.id.nul_linear4);
-        final View view5 = findViewById(R.id.nul_linear5);
-        final View view6 = findViewById(R.id.nul_linear6);
-        final View view7 = findViewById(R.id.nul_linear7);
-        final View view8 = findViewById(R.id.nul_linear8);
+        final View view1 = findViewById(R.id.nal_linear1);
+        final View view2 = findViewById(R.id.nal_linear2);
+        final  View view3 = findViewById(R.id.nal_linear3);
+        final View view4 = findViewById(R.id.nal_linear4);
+        final View view5 = findViewById(R.id.nal_linear5);
+        final View view6 = findViewById(R.id.nal_linear6);
+        final View view7 = findViewById(R.id.nal_linear7);
+        final View view8 = findViewById(R.id.nal_linear8);
 
         //点击事件
         view1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -52,7 +52,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -62,7 +62,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -72,7 +72,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -82,7 +82,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -92,7 +92,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -102,7 +102,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -112,7 +112,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this,NoticeUserDetailNotNullActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this,NoticeAdminDetailNotNullActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是NoticeUserListActivity传过来的值！");
                 //跳转Activity
@@ -124,7 +124,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -147,7 +147,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view2.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -170,7 +170,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view3.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -193,7 +193,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view4.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -216,7 +216,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view5.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -239,7 +239,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view6.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -262,7 +262,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view7.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -285,7 +285,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         view8.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
-                new AlertDialog.Builder(NoticeUserListActivity.this).setTitle("系统提示")//设置对话框标题
+                new AlertDialog.Builder(NoticeAdminListActivity.this).setTitle("系统提示")//设置对话框标题
                         .setMessage("是否确认删除该条通知？")//设置显示的内容
                         .setPositiveButton("确定",new DialogInterface.OnClickListener() {//添加确定按钮
                             @Override
@@ -314,7 +314,7 @@ public class NoticeUserListActivity extends BaseSearchActivity {
         imgView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this, NoticeUserListSearchActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this, NoticeAdminListSearchActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
@@ -325,11 +325,11 @@ public class NoticeUserListActivity extends BaseSearchActivity {
 
     /*添加按钮跳转*/
     protected void add(){
-        FloatingActionButton fBtn = (FloatingActionButton) findViewById(R.id.nul_fBtn);
+        FloatingActionButton fBtn = (FloatingActionButton) findViewById(R.id.nal_fBtn);
         fBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NoticeUserListActivity.this, NoticeUserDetailActivity.class);
+                Intent intent = new Intent(NoticeAdminListActivity.this, NoticeAdminDetailActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是UserListActivity传过来的值！");
                 //跳转Activity
