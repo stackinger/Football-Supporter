@@ -31,7 +31,7 @@ public class NoticeAdminListActivity extends BaseSearchActivity {
     protected void viewEvent(){
         final View view1 = findViewById(R.id.nal_linear1);
         final View view2 = findViewById(R.id.nal_linear2);
-        final  View view3 = findViewById(R.id.nal_linear3);
+        final View view3 = findViewById(R.id.nal_linear3);
         final View view4 = findViewById(R.id.nal_linear4);
         final View view5 = findViewById(R.id.nal_linear5);
         final View view6 = findViewById(R.id.nal_linear6);
