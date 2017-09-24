@@ -32,13 +32,13 @@ public class NewsListActivity extends BaseSearchActivity {
 
     /*cardView跳转到新闻详细*/
     protected void ToOrderDetail() {
-        CardView card1 = (CardView) findViewById(R.id.nl_card1);
-        CardView card2 = (CardView) findViewById(R.id.nl_card2);
-        CardView card3 = (CardView) findViewById(R.id.nl_card3);
-        CardView card4 = (CardView) findViewById(R.id.nl_card4);
-        CardView card5 = (CardView) findViewById(R.id.nl_card5);
-        CardView card6 = (CardView) findViewById(R.id.nl_card6);
-        CardView card7 = (CardView) findViewById(R.id.nl_card7);
+        final CardView card1 = (CardView) findViewById(R.id.nl_card1);
+        final CardView card2 = (CardView) findViewById(R.id.nl_card2);
+        final CardView card3 = (CardView) findViewById(R.id.nl_card3);
+        final CardView card4 = (CardView) findViewById(R.id.nl_card4);
+        final CardView card5 = (CardView) findViewById(R.id.nl_card5);
+        final CardView card6 = (CardView) findViewById(R.id.nl_card6);
+        final CardView card7 = (CardView) findViewById(R.id.nl_card7);
         card1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -120,6 +120,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card1.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -142,6 +143,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card2.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -164,6 +166,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card3.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -186,6 +189,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card4.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -208,6 +212,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card5.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -230,6 +235,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card6.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -252,6 +258,7 @@ public class NewsListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条新闻成功", Toast.LENGTH_SHORT).show();
+                                card7.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮

@@ -50,7 +50,7 @@ public class FieldListActivity extends BaseActivity{
 
     /*为cardview添加事件*/
     protected void cardLongClick(){
-        CardView cardView1 = (CardView)findViewById(R.id.fl_card1);
+        final CardView cardView1 = (CardView)findViewById(R.id.fl_card1);
         cardView1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -61,6 +61,7 @@ public class FieldListActivity extends BaseActivity{
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
+                                cardView1.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -74,7 +75,7 @@ public class FieldListActivity extends BaseActivity{
             }
         });
 
-        CardView cardView2 = (CardView)findViewById(R.id.fl_card2);
+        final CardView cardView2 = (CardView)findViewById(R.id.fl_card2);
         cardView2.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -85,6 +86,7 @@ public class FieldListActivity extends BaseActivity{
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
+                                cardView2.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -98,7 +100,7 @@ public class FieldListActivity extends BaseActivity{
             }
         });
 
-        CardView cardView3 = (CardView)findViewById(R.id.fl_card3);
+        final CardView cardView3 = (CardView)findViewById(R.id.fl_card3);
         cardView3.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -109,6 +111,7 @@ public class FieldListActivity extends BaseActivity{
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
+                                cardView3.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -122,7 +125,7 @@ public class FieldListActivity extends BaseActivity{
             }
         });
 
-        CardView cardView4 = (CardView)findViewById(R.id.fl_card4);
+        final CardView cardView4 = (CardView)findViewById(R.id.fl_card4);
         cardView4.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -133,6 +136,7 @@ public class FieldListActivity extends BaseActivity{
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
+                                cardView4.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -146,7 +150,7 @@ public class FieldListActivity extends BaseActivity{
             }
         });
 
-        CardView cardView5 = (CardView)findViewById(R.id.fl_card5);
+        final CardView cardView5 = (CardView)findViewById(R.id.fl_card5);
         cardView5.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -157,6 +161,7 @@ public class FieldListActivity extends BaseActivity{
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该球场成功", Toast.LENGTH_SHORT).show();
+                                cardView5.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮

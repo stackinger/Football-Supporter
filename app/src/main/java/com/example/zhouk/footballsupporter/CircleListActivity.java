@@ -30,11 +30,11 @@ public class CircleListActivity extends BaseSearchActivity {
 
     /*cardview添加长按事件*/
     protected void longClick(){
-        CardView card1 = (CardView) findViewById(R.id.cl_card1);
-        CardView card2 = (CardView) findViewById(R.id.cl_card2);
-        CardView card3 = (CardView) findViewById(R.id.cl_card3);
-        CardView card4 = (CardView) findViewById(R.id.cl_card4);
-        CardView card5 = (CardView) findViewById(R.id.cl_card5);
+        final CardView card1 = (CardView) findViewById(R.id.cl_card1);
+        final CardView card2 = (CardView) findViewById(R.id.cl_card2);
+        final CardView card3 = (CardView) findViewById(R.id.cl_card3);
+        final CardView card4 = (CardView) findViewById(R.id.cl_card4);
+        final CardView card5 = (CardView) findViewById(R.id.cl_card5);
         card1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View view) {
@@ -45,6 +45,7 @@ public class CircleListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条圈子成功", Toast.LENGTH_SHORT).show();
+                                card1.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -67,6 +68,7 @@ public class CircleListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条圈子成功", Toast.LENGTH_SHORT).show();
+                                card2.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -89,6 +91,7 @@ public class CircleListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条圈子成功", Toast.LENGTH_SHORT).show();
+                                card3.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -111,6 +114,7 @@ public class CircleListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条圈子成功", Toast.LENGTH_SHORT).show();
+                                card4.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
@@ -133,6 +137,7 @@ public class CircleListActivity extends BaseSearchActivity {
                             public void onClick(DialogInterface dialog, int which) {//确定按钮的响应事件
                                 // TODO Auto-generated method stub
                                 Toast.makeText(getApplicationContext(),"删除该条圈子成功", Toast.LENGTH_SHORT).show();
+                                card5.setVisibility(View.GONE);
                                /* finish();*/
                             }
                         }).setNegativeButton("返回",new DialogInterface.OnClickListener() {//添加返回按钮
