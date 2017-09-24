@@ -39,7 +39,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="    通知：9月16日至9月18日，因为西南交大主体育场11人球场场草坪维护，期间球场不对外开放，请各位管理员注意期间的人员流通，修改相应的球场开放时间。"/>
+                android:text="    通知：9月16日至9月18日，因为西南交大主体育场11人球场场草坪维护，期间球场不对外开放，请各位用户注意自己租用球场的时间。"/>
         </LinearLayout>
 
         <Button
