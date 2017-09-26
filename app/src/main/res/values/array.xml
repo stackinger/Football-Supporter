@@ -63,4 +63,9 @@
         <item>百世快递BestExpress</item>
         <item>其他</item>
     </string-array>
+
+    <string-array name="sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
 </resources>

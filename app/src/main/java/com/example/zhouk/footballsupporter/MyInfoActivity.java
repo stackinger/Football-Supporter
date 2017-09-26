@@ -17,17 +17,20 @@ public class MyInfoActivity extends BaseActivity {
         setBackBtn();
         setTitle("我的信息");
 
+        toBirth();
+        toName();
+        toSex();
     }
 
-    /*商品管理跳转*/
-    protected void goodsList(){
+    /*生日选择*/
+    protected void toBirth(){
         //添加点击事件
-        View field = (View)findViewById(R.id.sm_goods);
+        View field = (View)findViewById(R.id.mi_birth);
         field.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
-                Intent intent = new Intent(MyInfoActivity.this,ShopGoodsListActivity.class);
+                Intent intent = new Intent(MyInfoActivity.this,MyInfoBirthActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
@@ -36,15 +39,32 @@ public class MyInfoActivity extends BaseActivity {
         });
     }
 
-    /*商品管理跳转*/
-    protected void orderList(){
+    /*昵称选择*/
+    protected void toName(){
         //添加点击事件
-        View field = (View)findViewById(R.id.sm_order);
+        View field = (View)findViewById(R.id.mi_name);
         field.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
-                Intent intent = new Intent(MyInfoActivity.this,ShopOrderListActivity.class);
+                Intent intent = new Intent(MyInfoActivity.this,MyInfoNameActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*性别*/
+    protected void toSex(){
+        //添加点击事件
+        View field = (View)findViewById(R.id.mi_sex);
+        field.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
+                Intent intent = new Intent(MyInfoActivity.this,MyInfoSexActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity

@@ -61,10 +61,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="end|center_vertical">
-                    <ImageView
+                    <!--<ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/ic_chevron_right_black_24dp"/>
+                        android:src="@drawable/ic_chevron_right_black_24dp"/>-->
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
@@ -74,6 +74,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
+            android:id="@+id/mi_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -112,6 +113,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <LinearLayout
+            android:id="@+id/mi_sex"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -150,7 +152,9 @@
             android:layout_margin="5dp"
             android:layout_height="1dp"
             android:background="#40000000" />
+
         <LinearLayout
+            android:id="@+id/mi_birth"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -183,6 +187,7 @@
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>
+
         <View
             android:layout_width="fill_parent"
             android:layout_margin="5dp"

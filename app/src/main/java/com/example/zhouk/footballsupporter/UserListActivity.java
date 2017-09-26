@@ -1,10 +1,7 @@
 package com.example.zhouk.footballsupporter;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -32,7 +29,6 @@ public class UserListActivity extends BaseSearchActivity {
         View view3 = findViewById(R.id.ul_view3);
         View view4 = findViewById(R.id.ul_view4);
         View view5 = findViewById(R.id.ul_view5);
-
 
         //点击事件
         view1.setOnClickListener(new View.OnClickListener() {

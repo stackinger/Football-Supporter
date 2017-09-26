@@ -85,6 +85,9 @@
         <activity android:name=".NoticeAdminDetailActivity"></activity>
         <activity android:name=".NoticeAdminDetailNotNullActivity"></activity>
         <activity android:name=".MyInfoActivity"></activity>
+        <activity android:name=".MyInfoBirthActivity"></activity>
+        <activity android:name=".MyInfoNameActivity"></activity>
+        <activity android:name=".MyInfoSexActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data
