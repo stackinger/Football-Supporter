@@ -20,6 +20,7 @@ public class MyInfoActivity extends BaseActivity {
         toBirth();
         toName();
         toSex();
+        toSystem();
     }
 
     /*生日选择*/
@@ -73,4 +74,20 @@ public class MyInfoActivity extends BaseActivity {
         });
     }
 
+    /*系统设置*/
+    protected void toSystem(){
+        //添加点击事件
+        View field = (View)findViewById(R.id.mi_system);
+        field.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
+                Intent intent = new Intent(MyInfoActivity.this,MyInfoSystemActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
 }

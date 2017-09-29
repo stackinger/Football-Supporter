@@ -6,4 +6,7 @@
 
     <color name="white_text_color">#fff</color>
     <color name="gray_color">#4b4b58</color>
+
+    <drawable name="dark">#ff4b4b58</drawable>
+    <drawable name="light">#ffffffff</drawable>
 </resources>

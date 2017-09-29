@@ -88,6 +88,8 @@
         <activity android:name=".MyInfoBirthActivity"></activity>
         <activity android:name=".MyInfoNameActivity"></activity>
         <activity android:name=".MyInfoSexActivity"></activity>
+        <activity android:name=".MyInfoSystemActivity"></activity>
+        <activity android:name=".MyInfoFeedBackActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data

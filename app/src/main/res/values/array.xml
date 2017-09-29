@@ -68,4 +68,10 @@
         <item>男</item>
         <item>女</item>
     </string-array>
+
+    <string-array name="textSize">
+        <item>大</item>
+        <item>中</item>
+        <item>小</item>
+    </string-array>
 </resources>
