@@ -55,7 +55,7 @@ public class MainActivity extends BaseNoBackActivity {
         NoticeMagement();
         MyInfoManagement();
         jiaobiao();
-
+        tongzhi();
     }
 
     /*球场管理点击事件*/
@@ -187,6 +187,21 @@ public class MainActivity extends BaseNoBackActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this,MyInfoActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*通知图标*/
+    protected void tongzhi(){
+        View shopField = (View)findViewById(R.id.img_back_no);
+        shopField.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this,NoticeListActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity

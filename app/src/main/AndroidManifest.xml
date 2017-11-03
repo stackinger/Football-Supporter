@@ -29,6 +29,7 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
+        android:name="android.support.multidex.MultiDexApplication"
         android:theme="@style/AppTheme">
         <activity android:name=".LoginActivity">
             <intent-filter>
@@ -93,6 +94,8 @@
         <activity android:name=".MainActivity"></activity>
         <activity android:name=".ForgetActivity"></activity>
         <activity android:name=".MyRegisterActivity"></activity>
+        <activity android:name=".NoticeListActivity"></activity>
+        <activity android:name=".NoticeDetailActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data

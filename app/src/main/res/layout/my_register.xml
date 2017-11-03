@@ -89,7 +89,7 @@
             </LinearLayout>
         </LinearLayout>
         <Button
-            android:id="@+id/zhuce_btn"
+            android:id="@+id/zc_zhuce_btn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"

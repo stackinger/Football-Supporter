@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/n_linear1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年9月15日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    关于9月16日至9月18日，西南交大主体育场11人球场草坪维护通知。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <LinearLayout
+                android:id="@+id/n_linear2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年9月12日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    关于9月13日至9月15日，西南交大主体育场5人球场1号、3号草坪维护通知。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <LinearLayout
+                android:id="@+id/n_linear3"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年9月9日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    关于9月11日教师节放假，球场场馆关闭通知。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <LinearLayout
+                android:id="@+id/n_linear4"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年9月1日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    新学期刚刚开始，请各位管理员注意球场人数变化，控制球场人数。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <LinearLayout
+                android:id="@+id/n_linear5"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年7月1日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    暑假期间，暂定开放西南交大主体育场11人场，主体育场5人场6号。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+
+            <LinearLayout
+                android:id="@+id/n_linear6"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年6月1日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    近期天气炎热，请各位管理员注意球场状况，防止人员中暑。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+
+            <LinearLayout
+                android:id="@+id/n_linear7"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年5月1日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    关于5月1日劳动节放假通知。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <LinearLayout
+                android:id="@+id/n_linear8"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017年4月1日"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:maxLines="2"
+                    android:text="    天气逐渐转暖，最近球场拉伤人员较多，请管理员多多注意。"
+                    android:textSize="18sp"
+                    android:textColor="#000"/>
+            </LinearLayout>
+            <View
+                android:layout_width="fill_parent"
+                android:layout_marginTop="5dp"
+                android:layout_height="1dp"
+                android:background="#40000000" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_margin="8dp"
+                android:text="加载更多..."/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
