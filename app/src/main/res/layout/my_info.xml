@@ -229,7 +229,7 @@
             android:layout_height="1dp"
             android:background="#40000000" />
         <Button
-            android:id="@+id/ud_delBtn"
+            android:id="@+id/mi_tuiBtn"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"

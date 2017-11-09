@@ -96,6 +96,7 @@
         <activity android:name=".MyRegisterActivity"></activity>
         <activity android:name=".NoticeListActivity"></activity>
         <activity android:name=".NoticeDetailActivity"></activity>
+        <activity android:name=".FieldMainActivity"></activity>
 
         <service android:name="com.amap.api.location.APSService"></service>
         <meta-data

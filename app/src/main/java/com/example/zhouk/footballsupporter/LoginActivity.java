@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.Toast;
 
 
@@ -28,12 +29,28 @@ public class LoginActivity extends Activity {
         field.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this,MainActivity.class);
-                //采用Intent普通传值的方式
-                intent.putExtra("skip", "我是Login传过来的值！");
-                //跳转Activity
-                startActivityForResult(intent, requestCode);
+                EditText zhanghao = (EditText) findViewById(R.id.zhanghao);
+                String zhanghaoStr = zhanghao.getText().toString();
+                EditText mima = (EditText) findViewById(R.id.mima);
+                String mimaStr = mima.getText().toString();
+                if("superadmin".equals(zhanghaoStr) && "superadmin".equals(mimaStr)){
+                    Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this,MainActivity.class);
+                    //采用Intent普通传值的方式
+                    intent.putExtra("skip", "我是Login传过来的值！");
+                    //跳转Activity
+                    startActivityForResult(intent, requestCode);
+                }else if("fieldadmin".equals(zhanghaoStr) && "fieldadmin".equals(mimaStr)){
+                    Toast.makeText(getApplicationContext(), "登录成功", Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(LoginActivity.this,FieldMainActivity.class);
+                    //采用Intent普通传值的方式
+                    intent.putExtra("skip", "我是Login传过来的值！");
+                    //跳转Activity
+                    startActivityForResult(intent, requestCode);
+                }else{
+                    Toast.makeText(getApplicationContext(), "账号或密码错误", Toast.LENGTH_SHORT).show();
+                }
+
             }
         });
     }

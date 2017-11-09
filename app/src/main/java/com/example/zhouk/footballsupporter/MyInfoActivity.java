@@ -21,6 +21,7 @@ public class MyInfoActivity extends BaseActivity {
         toName();
         toSex();
         toSystem();
+        toLogin();
     }
 
     /*生日选择*/
@@ -83,6 +84,23 @@ public class MyInfoActivity extends BaseActivity {
             public void onClick(View view) {
                 /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
                 Intent intent = new Intent(MyInfoActivity.this,MyInfoSystemActivity.class);
+                //采用Intent普通传值的方式
+                intent.putExtra("skip", "我是MainActivity传过来的值！");
+                //跳转Activity
+                startActivityForResult(intent, requestCode);
+            }
+        });
+    }
+
+    /*退出登录*/
+    protected void toLogin(){
+        //添加点击事件
+        View field = (View)findViewById(R.id.mi_tuiBtn);
+        field.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view) {
+                /*Toast.makeText(getApplicationContext(), "默认Toast样式", Toast.LENGTH_SHORT).show();*/
+                Intent intent = new Intent(MyInfoActivity.this,LoginActivity.class);
                 //采用Intent普通传值的方式
                 intent.putExtra("skip", "我是MainActivity传过来的值！");
                 //跳转Activity
